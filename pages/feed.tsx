@@ -2,7 +2,7 @@ import { Feed } from 'feed'
 import { GetServerSideProps } from 'next'
 import { getDatabase } from '../lib/notion'
 
-const domain = 'https://sakana-blog.vercel.app'
+const domain = 'https://example-blog.vercel.app'
 const year = new Date().getFullYear()
 
 // Function for generating the RSS feed
@@ -11,15 +11,15 @@ const generateRSS = (posts: any) => {
   const feed = new Feed({
     id: domain,
     link: domain,
-    title: "Blog by Sakana",
+    title: "Blog by Lonely Ranger",
     description: 'Thoughts, ideas, and more.',
-    copyright: `All rights reserved ${year}, Sakana`,
+    copyright: `All rights reserved ${year}, Lonely Ranger`,
     image: `${domain}/favicon.png`,
     favicon: `${domain}/favicon.ico`,
     author: {
-      name: 'Sakana',
+      name: 'Lonely Ranger',
       email: 'mail@example.com',
-      link: 'https://sakana-blog.vercel.app',
+      link: 'https://example-blog.vercel.app',
     },
   })
 

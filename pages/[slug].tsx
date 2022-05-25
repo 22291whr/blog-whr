@@ -26,8 +26,8 @@ const Post: NextPage<{ page: any; blocks: any[] }> = ({ page, blocks }) => {
   return (
     <div>
       <Head>
-        <title>{page.properties.name.title[0].plain_text} - Blog - Username</title>
-        <meta name="description" content="Username" />
+        <title>{page.properties.name.title[0].plain_text} - Blog - Lonely Ranger</title>
+        <meta name="description" content="Lonely Ranger" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -71,7 +71,7 @@ const Post: NextPage<{ page: any; blocks: any[] }> = ({ page, blocks }) => {
               <BlogCopyright page={page} absoluteLink={`${hostname}/${router.query.slug}`} />
             </div>
 
-            <Link href="/." passHref>
+            <Link href="/" passHref>
               <div className="border rounded cursor-pointer flex border-gray-400/30 mt-4 p-4 items-center justify-between md:-mx-4 hover:(bg-light-200 opacity-80) dark:hover:bg-dark-700 ">
                 <span>Back</span>
                 <ArrowLeft />
